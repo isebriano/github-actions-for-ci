@@ -36,8 +36,8 @@ jobs:
         path: public/
   test:
     needs: build
-    runs-on: ubuntu-lates
-    - uses: actions/download-artifact@main
+    runs-on: ubuntu-latest
+    uses: actions/download-artifact@main
       with:
         name: webpack artifacts
         path: public
